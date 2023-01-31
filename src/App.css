@@ -6,19 +6,10 @@
 }
 
 body {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(/sven-mieke-optBC2FxCfc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .App {
@@ -30,17 +21,17 @@ body {
 }
 
 .register {
-  max-width: 978px;
-  width: 100vw;
+  max-width: 600px;
+  width: 400vw;
   display: flex;
   border: 1px solid #e9ecef;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #e9ecef; 
-  background-color: white;
+  background-color: rgba(5, 5, 5, 0.75);
 }
 
 .register span {
-  color: #54575a;
+  color: #d7cfbcd9;
 }
 
 #form {
@@ -49,10 +40,20 @@ body {
   margin: 2em auto;
 }
 
+#form > h2,
+.sign {
+  color: rgba(243, 241, 249, 0.842);
+}
+
 #form > input,
 .btn {
-  border: 1px solid #e9ecef;
+  border: 1px solid #e3e8ee;
   padding: 0.9em 1em;
+  color: rgba(77, 36, 181, 0.25);
+}
+
+#form > .input {
+  background-color: rgba(25, 25, 25, 0.75);
 }
 
 #form > input:focus {
@@ -60,8 +61,8 @@ body {
 }
 
 #form > .btn {
-  background-color: #003049;
-  color: #e9ecef;
+  background-color: rgba(1, 1, 1, 0.25);
+  color: #7a8da1;
   font-size: 1em;
   cursor: pointer;
 }
@@ -73,6 +74,7 @@ body {
 
 .flex-col {
   flex-direction: column;
+  color: #ab790e;
 }
 
 .register .col-1 {

@@ -11,15 +11,20 @@ export default function Form() {
     <section>
       <div className="register">
         <form id="form" className="flex flex-col" onSubmit={handleSubmit(onSubmit)}>
-          <h2>Sign In</h2>
-          <span>Register and enjoy the service</span>
-          <input type="text" {...register("username")} placeholder="username" />
-          <input type="text" {...register("password")} placeholder="password" />
-          <input type="text" {...register("email")} placeholder="email" />
-          <input type="text" {...register("mobile number",{required:true,maxLength:10})} placeholder="mobile number"/>
+          <h2 className="sign">Sign Up</h2>
+          <span>Register and Enjoy the Service</span>
+          <input className="input" type="text" {...register("username")} placeholder="username" />
+          <input className="input" type="text" {...register("email")} placeholder="email" />
+          <input className="input" type="text" {...register("password")} placeholder="password" />
+          <input className="input" type="date" {...register("email")} placeholder="date" />
+          {/* <input className="input" type="radio" {...register("gender")} placeholder="gender" />
+          <input className="input" type="radio" {...register("gender")} placeholder="gender" /> */}
+          <input className="input" type="text" {...register("email")} placeholder="email" />
+          <input className="input" type="text" {...register("email")} placeholder="email" />
+          <input className="input" type="text" {...register("mobile number",{required:true,maxLength:10})} placeholder="mobile number"/>
           {errors.mobile?.type==="required" && "Mobile number is required"}
           {errors.mobile?.type==="maxLength" && "Maximum length is exceeded"}
-          <button className="btn">Sign In</button>
+          <button className="btn">Sign Up</button>
         </form>
       </div>
     </section>
