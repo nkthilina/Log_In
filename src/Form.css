@@ -1,0 +1,11 @@
+.form-container {
+    margin: 100px auto;
+    width: 600px;
+    border-radius: 10px;
+    height: 600px;
+    display: grid;
+  }
+
+.errorMessage {
+    color: red;
+  }

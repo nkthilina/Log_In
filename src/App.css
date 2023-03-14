@@ -1,49 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-* > * {
-  font-family: "Poppins", cursive;
-  margin: 0;
-}
-
-body {
-  background-image: url(/sven-mieke-optBC2FxCfc-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-.App {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.register {
-  max-width: 600px;
-  width: 400vw;
-  display: flex;
-  border: 1px solid #e9ecef;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px #e9ecef; 
-  background-color: rgba(5, 5, 5, 0.75);
-}
-
-.register span {
-  color: #d7cfbcd9;
-}
-
-#form {
-  max-width: 320px;
-  width: 100vw;
-  margin: 2em auto;
-}
-
-#form > h2,
-.sign {
-  color: rgba(243, 241, 249, 0.842);
-}
+/*
 
 #form > input,
 .btn {
@@ -67,15 +22,6 @@ body {
   cursor: pointer;
 }
 
-.flex {
-  display: flex;
-  gap: 1em;
-}
-
-.flex-col {
-  flex-direction: column;
-  color: #ab790e;
-}
 
 .register .col-1 {
   margin: auto;
@@ -96,4 +42,87 @@ body {
   .register .col-2 img {
     display: initial;
   }
+} */
+
+* > * {
+  font-family: "Poppins", cursive;
+  margin: 0;
+}
+
+body {
+  background-image: url(/sven-mieke-optBC2FxCfc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.App-heade {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.form-content-right {
+  height: 550px;
+  /* max-width: 600px;
+  width: 500vw; */
+  display: flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #e9ecef; 
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%; /* Set the initial width to 100% */
+  max-width: 500px; /* Set a maximum width */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col {
+  flex-direction: column;
+  color: #ab790e;
+}
+
+.full-form-header {
+  color: rgba(243, 241, 249, 0.842);
+}
+
+.span-idea {
+  color: #d7cfbcd9;
+}
+
+#form {
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+#form > h2, .full-form-header {
+  color: rgba(243, 241, 249, 0.842);
+}
+
+#form > input,
+.form-input-btn {
+  border: 1px solid #e3e8ee;
+  padding: 0.9em 10em;
+  color: rgba(77, 36, 181, 0.25);
+}
+
+.form-input {
+  background-color: rgba(25, 25, 25, 0.75);
 }
